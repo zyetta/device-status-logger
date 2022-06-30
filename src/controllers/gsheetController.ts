@@ -121,7 +121,7 @@ export class GsheetController {
             for (let i = 0; i < SPREADSHEET_RANGES.length; i += 1) {
                 uploadConfig.push({
                     spreadsheetId,
-                    requestBody: { values: data[i].map(x => [x.createdAt, x.value]) },
+                    requestBody: { values: data[i].map(x => [x.createdAt, x.value, x.deviceId]) },
                     range: SPREADSHEET_RANGES[i],
                     auth,
                     valueInputOption

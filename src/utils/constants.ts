@@ -8,3 +8,4 @@ export const SPREADSHEET_UPLOAD_SCHEDULE = '5 * * * *';
 export const HEART_BEAT = '*/10 * * * *';
 
 export const PROFILE_URL = 'https://i.imgur.com/BosWxIE.png';
+export const EMOTES = ['🌞', '🌻', '🌈', '🌸', '🌟', '🌚', '🦥', '🦨'];

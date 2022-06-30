@@ -18,7 +18,7 @@ export default class MetricsHandler {
         try {
             const { value, error } = MetricsInputSchema.validate(data, this.validationOptions);
             if (error) throw error;
-            await MetricsController.storeStatus({ value: value.value, deviceId: process.env.DEVICE_ID as string });
+            await MetricsController.storeStatus(value);
         } catch (error) {
             LogsHandler.log({ topic: LogTypeEnum.VALIDATION_ERROR, message: error });
         }
