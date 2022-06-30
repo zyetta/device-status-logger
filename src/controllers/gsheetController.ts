@@ -30,7 +30,7 @@ export class GsheetController {
      * Constructor for gsheet controller
      */
     constructor() {
-        console.log(ColorsEnum.BG_CYAN, 'Uploading to Google Sheet 🚀');
+        console.log(ColorsEnum.BG_CYAN, 'Uploading to Google Sheet 🚀', ColorsEnum.RESET);
         this.setCredentials();
         this.authenticate(this.getCredentials());
     }
@@ -104,7 +104,7 @@ export class GsheetController {
                 getStatusModel()
             ]);
             const data = await Promise.all([
-                StatusModel.find(filter).select(select),
+                StatusModel.find(filter).select(select)
             ]);
             if (data.length !== SPREADSHEET_RANGES.length) throw Error('Inconsistent Database Entries');
 

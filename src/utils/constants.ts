@@ -4,6 +4,7 @@ export const SPREADSHEET_SCOPES = ['https://www.googleapis.com/auth/spreadsheets
 export const TOKEN_PATH = '.token.json';
 // The order of these values will affect the GsheetController
 export const SPREADSHEET_RANGES = ['Logs!A:B'];
-export const SPREADSHEET_UPLOAD_SCHEDULE = '0 * * * *';
+export const SPREADSHEET_UPLOAD_SCHEDULE = '5 * * * *';
+export const HEART_BEAT = '*/10 * * * *';
 
-export const PROFILE_URL = 'https://comicvine.gamespot.com/a/uploads/scale_small/0/77/1260295-dw.jpg';
+export const PROFILE_URL = 'https://i.imgur.com/BosWxIE.png';

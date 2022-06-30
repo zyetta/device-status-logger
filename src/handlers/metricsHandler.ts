@@ -1,8 +1,7 @@
+import { ValidationOptions } from 'joi';
 import { LogsHandler } from './logsHandler';
 import { LogTypeEnum } from '../types/enums/logsEnums';
 import { MetricsController } from '../controllers/metricsController';
-// eslint-disable-next-line import/order
-import { ValidationOptions } from 'joi';
 import { MetricsInputSchema } from '../validation/metricsValidation';
 
 export default class MetricsHandler {

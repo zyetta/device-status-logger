@@ -4,13 +4,13 @@ import { getConnectionToDatabase } from '../config/mongo';
 
 export const StatusSchema: Schema = new Schema(
     {
-        value: { type: Boolean, required: true },
+        value: { type: Number, required: true },
         exported: { type: Boolean, required: true, default: false }
     },
-    { timestamps: true, collection: 'status' }
+    { timestamps: true, collection: 'normanStatus' }
 );
 
-export type Status = { value: boolean };
+export type Status = { value: number };
 export type IStatus = Status & Document & { createdAt?: Date; updatedAt?: Date };
 
 /** Define CRUD Interfaces */

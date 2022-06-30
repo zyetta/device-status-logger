@@ -8,7 +8,7 @@ export const LogsSchema: Schema = new Schema(
         topic: { type: String, required: true },
         message: { type: String, required: true }
     },
-    { timestamps: true, collection: 'logs' }
+    { timestamps: true, collection: 'normanLogs' }
 );
 
 export type Logs = { topic: LogTypeEnum; message: string };

@@ -1,10 +1,9 @@
+import { ValidationOptions } from 'joi';
 import { LogsController } from '../controllers/logsController';
 import { Logs } from '../models/logsModel';
 import { ColorsEnum } from '../types/enums/generalEnums';
 import { anyToString } from '../utils/utils';
 import { LogsInputSchema } from '../validation/logsValidation';
-// eslint-disable-next-line import/order
-import { ValidationOptions } from 'joi';
 
 export class LogsHandler {
     /**

@@ -1,7 +1,6 @@
+import { Webhook } from 'discord-webhook-node';
 import { DiscordWebhook } from '../types/discordTypes';
 import { PROFILE_URL } from '../utils/constants';
-// eslint-disable-next-line import/order
-import { Webhook } from 'discord-webhook-node';
 
 export class DiscordController {
     /**
