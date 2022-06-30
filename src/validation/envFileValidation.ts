@@ -9,14 +9,17 @@ const envFileInputSchema = Joi.object({
     // Discord Credentials
     discordWebhook: Joi.string().required(),
     // Google Credentials
-    googleToken: Joi.string().required()
+    googleToken: Joi.string().required(),
+    // Device Id
+    deviceId: Joi.string().required()
 });
 
 export const validateEnv = () => {
     const data = {
         mongoClusterUri: process.env.CLUSTER_URI,
         googleToken: process.env.GOOGLE_TOKEN,
-        discordWebhook: process.env.DISCORD_WEBHOOK
+        discordWebhook: process.env.DISCORD_WEBHOOK,
+        deviceId: process.env.DEVICE_ID
     };
     const { value: _value, error } = envFileInputSchema.validate(data, validationOptions);
     if (error) return error;
