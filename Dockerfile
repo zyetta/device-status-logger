@@ -12,7 +12,6 @@ RUN npm install
 # Copy Source Files
 COPY tsconfig.json ./
 COPY index.ts ./
-COPY .token.json ./
 COPY .env ./
 COPY src ./src
 
