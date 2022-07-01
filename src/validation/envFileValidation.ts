@@ -8,8 +8,6 @@ const envFileInputSchema = Joi.object({
     mongoClusterUri: Joi.string().required(),
     // Discord Credentials
     discordWebhook: Joi.string().required(),
-    // Google Credentials
-    googleToken: Joi.string().required(),
     // Device Id
     deviceId: Joi.string().required()
 });
@@ -17,7 +15,6 @@ const envFileInputSchema = Joi.object({
 export const validateEnv = () => {
     const data = {
         mongoClusterUri: process.env.CLUSTER_URI,
-        googleToken: process.env.GOOGLE_TOKEN,
         discordWebhook: process.env.DISCORD_WEBHOOK,
         deviceId: process.env.DEVICE_ID
     };

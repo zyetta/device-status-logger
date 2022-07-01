@@ -1,2 +1,9 @@
 # Norman Heartbeat
 Clone and run deploy.sh
+
+`.env`
+```
+CLUSTER_URI=mongodb+srv://...
+DISCORD_WEBHOOK=https://discord.com/api/webhooks/...
+DEVICE_ID=...
+```

@@ -8,7 +8,7 @@ export const StatusSchema: Schema = new Schema(
         value: { type: Number, required: true },
         exported: { type: Boolean, required: true, default: false }
     },
-    { timestamps: true, collection: 'normanStatus' }
+    { timestamps: true, collection: 'status' }
 );
 
 export type Status = { value: number, deviceId: string };
