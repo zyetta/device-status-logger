@@ -14,9 +14,14 @@ import MetricsHandler from './src/handlers/metricsHandler';
 cron.schedule(HEART_BEAT, async () => {
     await DiscordHandler.postWebhook({
         url: process.env.DISCORD_WEBHOOK as string,
-        payload: `I'm still Online ${EMOTES[Math.floor(Math.random() * (EMOTES.length - 1)) + 1]}`
+        payload: `${process.env.DEVICE_ID} - I'm still Online ${
+            EMOTES[Math.floor(Math.random() * (EMOTES.length - 1)) + 1]
+        }`
     });
     await MetricsHandler.store({ value: 1, deviceId: process.env.DEVICE_ID });
 });
 
-DiscordHandler.postWebhook({ url: process.env.DISCORD_WEBHOOK as string, payload: "I'm Online 🌞" });
+DiscordHandler.postWebhook({
+    url: process.env.DISCORD_WEBHOOK as string,
+    payload: `${process.env.DEVICE_ID} - I'm Online 🌞`
+});

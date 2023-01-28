@@ -9,7 +9,7 @@ export class DiscordController {
      */
     public static postWebhook = async (data: DiscordWebhook): Promise<void> => {
         const hook = new Webhook(data.url);
-        hook.setUsername('Norman the Doorman');
+        hook.setUsername('Device Status');
         hook.setAvatar(PROFILE_URL);
         await hook.send(data.payload);
     };
