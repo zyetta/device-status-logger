@@ -1,1 +1,0 @@
-{"version":3,"file":"logsValidation.js","sourceRoot":"","sources":["../../../src/validation/logsValidation.ts"],"names":[],"mappings":";;;;;;AAAA,8CAAsB;AAET,QAAA,eAAe,GAAG,aAAG,CAAC,MAAM,CAAC;IACtC,KAAK,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;IAC9B,OAAO,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;CACnC,CAAC,CAAC"}
