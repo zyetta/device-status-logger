@@ -40,3 +40,7 @@ Please make sure that the server is properly configured to handle incoming POST 
 - The `psutil` library is used for system information retrieval.
 - The `dotenv` library is used to load environment variables from the `.env` file.
 - The script runs indefinitely, sending system information in regular intervals, until manually stopped.
+
+
+SERVER_URL=http://192.168.68.122:7940
+TOKEN=q3Ynm4QsAkaqqNdGtMRyp5WLTJmM6cga

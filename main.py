@@ -51,7 +51,6 @@ def get_system_info():
         "network_bytes_sent": network_bytes_sent,
         "network_bytes_recv": network_bytes_recv,
         "uptime_seconds": uptime,
-        "battery_percent": battery_percent,
         "authentication": os.environ.get("TOKEN"),
     }
 
